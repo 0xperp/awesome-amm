@@ -195,6 +195,11 @@ There have been various implementations for an AMM that can be used for buying a
 	- [Whitepaper](https://www.fusotao.org/fusotao-whitepaper.pdf)
 	- [Greenbook](https://www.fusotao.org/fusotao-greenbook.pdf)
 - [Searcher Limit Order Book](https://jumpcrypto.com/searcher-limit-order-book/)
+- [1inch Limit Order Protocol](https://1inch.io/limit-order-protocol/)
+	- [Documentation](https://docs.1inch.io/docs/limit-order-protocol/introduction/)
+	- [The 1inch Limit Order Protocol v2 is released
+](https://blog.1inch.io/the-1inch-limit-order-protocol-v2-is-released-81c6802db1bd)
+	- [Limit order protocols offer more flexibility and efficiency to DEX traders](https://blog.1inch.io/anton-bukov-1inch-network-limit-order-protocols-offer-more-flexibility-and-efficiency-to-dex-6c996c81d1e4)
 
 # AMMs and Orderbooks
 - Just and Time Liquidity
