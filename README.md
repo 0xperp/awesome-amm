@@ -239,6 +239,8 @@ There have been various implementations for an AMM that can be used for buying a
 	- [Documentation](https://docs.polymarket.com/)
 - [Augur](https://www.augur.net/)
 	- [Whitepapers](https://github.com/AugurProject/whitepaper)
+- [GooseFX](https://goosefx.io/)
+	- [Documentation](https://docs.goosefx.io/goosefx-platform-features/ss-liquidity-provisioning)
 
 ## Assorted Reading
 - [A window into AMM 2.0 — Introducing Volatility Adjusted Fee](https://medium.com/hydraswap/a-window-into-amm-2-0-introducing-volatility-adjusted-fee-af909b6c8ba5)
