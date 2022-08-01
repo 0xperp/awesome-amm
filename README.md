@@ -10,6 +10,7 @@ A collection of the earliest posts regarding what came to be the automated marke
 - [Vitalik: Let's run on-chain decentralized exchanges the way we run prediction markets](https://www.reddit.com/r/ethereum/comments/55m04x/lets_run_onchain_decentralized_exchanges_the_way/)
 - [Martin Köppelmann: Gnosis Market Maker Orderbook](https://forum.gnosis.io/t/market-maker-order-book/19)
 - [Nick Johnson: Euler](https://www.reddit.com/r/ethereum/comments/54l32y/euler_the_simplest_exchange_and_currency/)
+- [Vitalik: Improving front running resistance of x*y=k market makers](https://ethresear.ch/t/improving-front-running-resistance-of-x-y-k-market-makers/1281)
 
 A collection of popular iterations of various designs (listed below)
 
@@ -33,6 +34,8 @@ A collection of popular iterations of various designs (listed below)
 	- [Curve Crypto Pools Whitepaper](https://curve.fi/files/crypto-pools-paper.pdf)
 - [Balancer](https://balancer.fi)
 	- [Balancer Whitepaper](https://balancer.fi/whitepaper.pdf)
+- [1inch Liquidity Protocol (ex-Mooniswap)](https://app.1inch.io/#/1/earn/pools)
+	- [Mooniswap Whitepaper](https://mooniswap.exchange/docs/MooniswapWhitePaper-v1.0.pdf)
 
 ## Designs
 - **Constant Product**   
@@ -84,8 +87,24 @@ A collection of popular iterations of various designs (listed below)
 	<p align="center">
 		<img src="./images/concentrated_liquidity_distribution.png" alt="Concentrated Liquidity Distribution"/>
 	</p>
-
+	
 Source [Constant Function Market Makers: DeFi’s “Zero to One” Innovation](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)
+	
+- **Front-running Resistance**
+	
+	AMMs use swap fees to earn profits for their liquidity providers. Liquidity providers are ultimately compensated via these fees. But if the pricing function significantly misprices the assets in the pool, as might happen after a sudden exogenous price crash, liquidity providers lose potential profit to arbitrageurs who purchase the mispriced assets.
+
+	An AMM can thus maximize its profit in one of two ways: maximizing trading fees, or minimizing arbitrageur profits. Mooniswap seeks specifically to pursue the latter strategy: by introducing virtual balances, arbitrageurs are less able to profit on temporarily mispriced pools, leaving more profit for liquidity providers.
+	
+	In Mooniswap, when a swap takes place, the pool does not immediately offer a profitable trade in the opposite direction. Instead, it slowly improves the price over some period of time. The following chart shows how several trades would significantly increase the constant-product invariant from point X to point Q.
+
+	<p align="center">
+		<img src="./images/front-running_resistance.png" alt="Front-running Resistance"/>
+	</p>
+
+	After the above swap takes place, the virtual balance for the opposite swap will linearly move from point A to point X. At some point before this full transition takes place, arbitrageurs will attempt to exploit the smaller temporary arbitrage opportunities along the way. For example, when the virtual balance reaches point B, an arbitrageur may choose to arbitrage the price back to the true price at point C. Note that points A and C (and the origin) are located on the same line, which means they have the same price. The chart depicts three sequential arbitrage trades (BC, DE, ZQ) until the real balance reaches an equilibrium price at point Q.
+	
+Source [Mooniswap Whitepaper](https://mooniswap.exchange/docs/MooniswapWhitePaper-v1.0.pdf)
 
 # Virtual Automated Market Makers 
 
