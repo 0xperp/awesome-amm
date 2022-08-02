@@ -10,6 +10,7 @@ A collection of the earliest posts regarding what came to be the automated marke
 - [Vitalik: Let's run on-chain decentralized exchanges the way we run prediction markets](https://www.reddit.com/r/ethereum/comments/55m04x/lets_run_onchain_decentralized_exchanges_the_way/)
 - [Martin Köppelmann: Gnosis Market Maker Orderbook](https://forum.gnosis.io/t/market-maker-order-book/19)
 - [Nick Johnson: Euler](https://www.reddit.com/r/ethereum/comments/54l32y/euler_the_simplest_exchange_and_currency/)
+- [Alan Lu: Building a Decentralized Exchange in Ethereum](https://blog.gnosis.pm/building-a-decentralized-exchange-in-ethereum-eea4e7452d6e)
 
 A collection of popular iterations of various designs (listed below)
 
