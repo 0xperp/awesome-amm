@@ -222,7 +222,7 @@ There have been various implementations for an AMM that can be used for buying a
 	- [Limit order protocols offer more flexibility and efficiency to DEX traders](https://blog.1inch.io/anton-bukov-1inch-network-limit-order-protocols-offer-more-flexibility-and-efficiency-to-dex-6c996c81d1e4)
 
 # AMMs and Orderbooks
-- Just and Time Liquidity
+- Just in Time Liquidity
 	- [First posted about in Hacker News by Doug Colkitt](https://news.ycombinator.com/item?id=26558039)
 	- [JIT Liquidity in Crocswap Whitepaper](https://www.crocswap.com/whitepaper)
 	- [Quantifyng ‘Just-in-Time’ liquidity in Uniswap v3](https://medium.com/coinmonks/quantifyng-just-in-time-liquidity-in-uniswap-v3-23ac1db729c5)
