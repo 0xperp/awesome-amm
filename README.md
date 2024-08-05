@@ -330,6 +330,7 @@ There have been various implementations for an AMM that can be used for buying a
 - [Dynamic Curves for Decentralized Autonomous Cryptocurrency Exchanges](https://arxiv.org/abs/2101.02778)
 - [Price Discovery and AMMs](https://twitter.com/therobotjames/status/1503474348677824513)
 - [Automated Market Makers (AMMs): Versioning Up](https://ambergroup.medium.com/automated-market-makers-amms-versioning-up-2c8a81e9889f)
+- [Automated Market Makers (Book)](https://www.amazon.com/Automated-Market-Makers-Decentralized-Cryptocurrency/dp/1484286154)
 
 ## Awesome Lists 
 - [Awesome AMM Models](https://github.com/Epiisteme/awesome-amm-models)
