@@ -107,6 +107,47 @@ Source [Constant Function Market Makers: DeFi’s “Zero to One” Innovation](
 	
 Source [Mooniswap Whitepaper](https://mooniswap.exchange/docs/MooniswapWhitePaper-v1.0.pdf)
 
+# AMM Aggregator
+
+Rango V2 smart contract aggregates and optimizes EVM chains through Uni V2, V3, curve pools and prominent well-audited bridges. Rango V2 employs the diamond design pattern in its architecture, incorporating facets, middlewares, and helper/library contracts. This transition automates a modular design similar to Ethereum Improvement Proposal (EIP) 2535, uniting over 250 EVM smart contracts.
+ 
+### There are two main type of contracts:
+- **`Diamond`**  : Handles swap and bridge transactions `(RangoDiamond.sol)`.
+- **`Middlewares`** : Receives token and messages on destination chain and handles the transaction.
+
+The functionality and support for each bridge is handled by a separate facet. All swapping protocols are handled by a single facet.
+For example:
+Axelar (Satellite): `RangoSatelliteFacet.sol`,
+THORChain: `RangoThorchainFacet.sol`,
+Stargate: `RangoStargateFacet.sol`,
+Stargate Middleware: `RangoStargateMiddleware.sol`,
+1inch, Paraswap, uniswap v2, v3 & forks etc: `RangoSwapperFacet.sol`
+
+<p align="center">
+		<img src="https://github.com/user-attachments/assets/9ed1153e-bed3-40e2-99f5-9484fbbbbad9" alt="Swap bridge"/>
+	</p>
+
+Rango provides a versatile cross-chain service (API/SDK/widget) that helps dApps and wallets get free from hassles of connecting to various AMMs and blockchains, tracking transactions, verifying third-party providers, etc.
+The API consists of just a few endpoints that have abstracted away a very huge amount of complexity in the server's side, such that making a fully-working cross-chain dApp over any Ethereum-based blockchains is a piece of cake.
+
+<p align="center">
+		<img src="https://github.com/user-attachments/assets/be419ead-1562-4c62-8e83-15ca5140ec1a" alt="Swap bridge call"/>
+	</p>
+
+## Resources
+- [Swap aggregation](https://docs.rango.exchange/api-integration/swap-aggregation)
+- [Supported AMMs & chains](https://docs.rango.exchange/integrations)
+- [Audit reports](https://github.com/rango-exchange/rango-contracts-v2/tree/main/audits)
+- [Report bug or contribute](https://github.com/rango-exchange)
+- [Widget examples for different frameworks](https://github.com/rango-exchange/widget-examples)
+
+## Products
+- [Plug-and-play widget integration docs](https://docs.rango.exchange/widget-integration/overview)
+- [Widget test live demo](https://widget.rango.exchange)
+- [Customize widget](https://playground.rango.exchange)
+- [SDK integration docs](https://docs.rango.exchange/integration-quick-start/overview)
+- [New token listing](https://github.com/rango-exchange/token-list)
+
 # Virtual Automated Market Makers 
 
 A virtual automated market maker (vAMM) uses formulas, such as constant product, but *only* as a price discovery mechanism. 
