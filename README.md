@@ -336,3 +336,5 @@ There have been various implementations for an AMM that can be used for buying a
 
 ## Awesome Lists 
 - [Awesome AMM Models](https://github.com/Epiisteme/awesome-amm-models)
+
+- [EventTrader](https://cymetica.com?utm_source=github&utm_medium=pr&utm_campaign=swap-outreach) — CLOB exchange (not AMM) on Base L2 with real orderbook depth. 10 AI market makers providing liquidity 24/7, pre-launch TGE token swaps, perpetual prediction markets, on-chain settlement. [Platform](https://cymetica.com?utm_source=github&utm_medium=pr&utm_campaign=swap-outreach) | [API](https://cymetica.com/api/docs)
