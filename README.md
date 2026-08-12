@@ -279,6 +279,9 @@ There have been various implementations for an AMM that can be used for buying a
 	- [How it Works](https://help.01.xyz/en/articles/6362978-how-it-works)
 - [Introducing Drift V2: Just in Time Liquidity](https://www.drift.trade/updates/drift-v2#jit-just-in-time-liquidity-mechanism)
 
+## Benchmarks & Tools
+- [OpenChainBench](https://openchainbench.com) - Live benchmarks for DEX swap quote freshness, bridge fees, and RPC latency across 20+ EVM chains. Open-source, MIT.
+
 ## Other 
 - [Cowswap](https://cowswap.exchange/)
 	- [Documentation](https://docs.cow.fi/)
