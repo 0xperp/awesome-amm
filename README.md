@@ -149,6 +149,7 @@ The API consists of just a few endpoints that have abstracted away a very huge a
 - [Customize widget](https://playground.rango.exchange)
 - [SDK integration docs](https://docs.rango.exchange/integration-quick-start/overview)
 - [New token listing](https://github.com/rango-exchange/token-list)
+- [Arb-Inc](https://arbitrage-inc.exchange/) - Community-driven decentralized exchange aggregator and cross-chain bridge on BNB Smart Chain with deterministic real-yield fee distribution. [GitHub](https://github.com/Lukecele/Arb-Inc-All-in-Dex)
 
 # Virtual Automated Market Makers 
 
