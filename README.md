@@ -141,6 +141,7 @@ The API consists of just a few endpoints that have abstracted away a very huge a
 - [Audit reports](https://github.com/rango-exchange/rango-contracts-v2/tree/main/audits)
 - [Widget examples for different frameworks](https://github.com/rango-exchange/widget-examples)
 - [Report bug or contribute](https://github.com/rango-exchange)
+- [DefiLPKit](https://defilpkit.com) - Free read-only LP calculator: fee APR, estimated net yield after impermanent loss and gas, and range scenarios for Uniswap v3, PancakeSwap v3, Aerodrome and Raydium pools.
 
 ## Products
 - [Rango app](https://app.rango.exchange/bridge)
